@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pre-commit-hooks"
+description = "Pre-commit hooks"
+authors = [
+	{ name = "John Russell", email = "johndevlopment7@gmail.com" }
+]
+readme = "README.md"
+license.file = "LICENSE"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dynamic = ["version"]
+
+[options.packages]
+include = ["johns_pre_commit_hooks"]
+
+[project.urls]
+Homepage = "https://github.com/JohnDevlopment/pre-commit-hooks"
+"Bug Tracker" = "https://github.com/JohnDevlopment/pre-commit-hooks/issues"
+
+[project.scripts]
+no_push_wip_commits = "johns_pre_commit_hooks.no_push_wip_commits:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "johns_pre_commit_hooks.__version__"}

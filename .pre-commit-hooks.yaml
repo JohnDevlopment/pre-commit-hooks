@@ -1,0 +1,5 @@
+- id: no-push-wip-commits
+  name: do not push WIP commits
+  entry: no-push-wip-commits
+  language: python
+  stages: [push, manual]
