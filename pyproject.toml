@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pre-commit-hooks"
+name = "johns-pre-commit-hooks"
 description = "Pre-commit hooks"
 authors = [
 	{ name = "John Russell", email = "johndevlopment7@gmail.com" }
