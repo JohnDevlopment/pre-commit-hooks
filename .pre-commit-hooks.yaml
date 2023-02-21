@@ -1,5 +1,6 @@
 - id: no-push-wip-commits
-  name: do not push WIP commits
   entry: no-push-wip-commits
+  name: do not push WIP commits
+  description: prevents WIP commits from being pushed
   language: python
   stages: [push, manual]

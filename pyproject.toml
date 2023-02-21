@@ -26,7 +26,7 @@ Homepage = "https://github.com/JohnDevlopment/pre-commit-hooks"
 "Bug Tracker" = "https://github.com/JohnDevlopment/pre-commit-hooks/issues"
 
 [project.scripts]
-no_push_wip_commits = "johns_pre_commit_hooks.no_push_wip_commits:main"
+no-push-wip-commits = "johns_pre_commit_hooks.no_push_wip_commits:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "johns_pre_commit_hooks.__version__"}
