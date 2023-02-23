@@ -1,9 +1,7 @@
 # Do not push commits that begin with "WIP"
 from __future__ import annotations
-
-#from argparse import ArgumentParser
-import subprocess, os, sys
 from typing import TYPE_CHECKING, TypeVar
+import subprocess, os, sys
 
 STDERR = sys.stderr
 
@@ -88,4 +86,4 @@ def main () -> int:
     return 0
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
