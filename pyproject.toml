@@ -27,6 +27,7 @@ Homepage = "https://github.com/JohnDevlopment/pre-commit-hooks"
 
 [project.scripts]
 no-push-wip-commits = "johns_pre_commit_hooks.no_push_wip_commits:main"
+no-push-squash-commits = "johns_pre_commit_hooks.no_push_squash_commits:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "johns_pre_commit_hooks.__version__"}

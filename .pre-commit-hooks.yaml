@@ -4,3 +4,9 @@
   description: prevents WIP commits from being pushed
   language: python
   stages: [push, manual]
+- id: no-push-squash-commits
+  entry: no-push-squash-commits
+  name: do not push squash/fixup commits
+  description: prevents squash! or fixup! commits from being pushed
+  language: python
+  stages: [push, manual]
